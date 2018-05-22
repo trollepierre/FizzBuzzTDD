@@ -6,7 +6,7 @@ namespace FizzBuzz.Library
     {
         public static string FizzBuzz(int input)
         {
-            throw new NotImplementedException();
+            return input.ToString();
         }
     }
 }
