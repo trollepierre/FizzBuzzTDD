@@ -18,7 +18,7 @@ namespace FizzBuzz.Library
                 output += "Buzz";
             }
 
-            return !string.IsNullOrEmpty(output) ? output : input.ToString();
+            return string.IsNullOrEmpty(output) ? input.ToString() : output;
         }
     }
 }
