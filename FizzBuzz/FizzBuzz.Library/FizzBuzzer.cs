@@ -6,16 +6,19 @@ namespace FizzBuzz.Library
     {
         public static string FizzBuzz(int input)
         {
-            if (input % 5 == 0)
-            {
-                return "Buzz";
-            }
+            var output = string.Empty;
 
             if (input % 3 == 0)
             {
-                return "Fizz";
+                output = "Fizz";
             }
-            return input.ToString();
+
+            if (input % 5 == 0)
+            {
+                output += "Buzz";
+            }
+
+            return !string.IsNullOrEmpty(output) ? output : input.ToString();
         }
     }
 }
