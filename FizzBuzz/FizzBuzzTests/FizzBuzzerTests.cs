@@ -23,5 +23,18 @@ namespace FizzBuzzTests
             var result = FizzBuzzer.FizzBuzz(input);
             Assert.AreEqual(input.ToString(), result);
         }
+
+        [DataTestMethod]
+        [DataRow(3)]
+        [DataRow(6)]
+        [DataRow(9)]
+        [DataRow(12)]
+        [DataRow(18)]
+        public void Div3Test(int input)
+        {
+            var result = FizzBuzzer.FizzBuzz(input);
+            Assert.AreEqual("Fizz", result);
+        }
+
     }
 }
