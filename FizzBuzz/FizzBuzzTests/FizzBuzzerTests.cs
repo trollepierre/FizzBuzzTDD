@@ -46,5 +46,16 @@ namespace FizzBuzzTests
             Assert.AreEqual("Buzz", result);
         }
 
+        [DataTestMethod]
+        [DataRow(15)]
+        [DataRow(30)]
+        [DataRow(45)]
+        [DataRow(60)]
+        public void Div5AndDiv3Test(int input)
+        {
+            var result = FizzBuzzer.FizzBuzz(input);
+            Assert.AreEqual("FizzBuzz", result);
+        }
+
     }
 }
